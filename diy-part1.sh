@@ -23,4 +23,4 @@
 git clone https://github.com/lkiuyu/luci-app-cpu-perf package/luci-app-cpu-perf
 git clone https://github.com/lkiuyu/luci-app-cpu-status package/luci-app-cpu-status
 git clone https://github.com/lkiuyu/luci-app-temp-status package/luci-app-temp-status
-git clone https://github.com/lkiuyu/DbusSmsForwardCPlus package/DbusSmsForwardCPlus
+# git clone https://github.com/lkiuyu/DbusSmsForwardCPlus package/DbusSmsForwardCPlus
