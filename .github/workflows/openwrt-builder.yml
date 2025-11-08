@@ -130,6 +130,10 @@ jobs:
       if: (!cancelled())
       run: df -hT
 
+    - name: Fix Git buffer
+      run: git config --global http.postBuffer 524288000
+
+
     - name: Upload bin directory
       uses: actions/upload-artifact@main
       if: env.UPLOAD_BIN_DIR == 'true'
