@@ -59,16 +59,16 @@ CONFIG_TARGET_msm89xx_msm8916=y
 # CONFIG_TARGET_msm89xx_msm8916_DEVICE_openstick-qrzl903 is not set
 # CONFIG_TARGET_msm89xx_msm8916_DEVICE_openstick-w001 is not set
 # CONFIG_TARGET_msm89xx_msm8916_DEVICE_openstick-ufi003 is not set
-# CONFIG_TARGET_msm89xx_msm8916_DEVICE_openstick-uz801 is not set
+CONFIG_TARGET_msm89xx_msm8916_DEVICE_openstick-uz801=y
 # CONFIG_TARGET_msm89xx_msm8916_DEVICE_openstick-mf32 is not set
 # CONFIG_TARGET_msm89xx_msm8916_DEVICE_openstick-mf601 is not set
 # CONFIG_TARGET_msm89xx_msm8916_DEVICE_openstick-wf2 is not set
-CONFIG_TARGET_msm89xx_msm8916_DEVICE_openstick-jz02v10=y
+# CONFIG_TARGET_msm89xx_msm8916_DEVICE_openstick-jz02v10 is not set
 CONFIG_HAS_SUBTARGETS=y
 CONFIG_HAS_DEVICES=y
 CONFIG_TARGET_BOARD="msm89xx"
 CONFIG_TARGET_SUBTARGET="msm8916"
-CONFIG_TARGET_PROFILE="DEVICE_openstick-jz02v10"
+CONFIG_TARGET_PROFILE="DEVICE_openstick-uz801"
 CONFIG_TARGET_ARCH_PACKAGES="aarch64_generic"
 CONFIG_DEFAULT_TARGET_OPTIMIZATION="-Os -pipe -mcpu=generic"
 CONFIG_CPU_TYPE="generic"
@@ -103,9 +103,9 @@ CONFIG_DEFAULT_partx-utils=y
 CONFIG_DEFAULT_ppp=y
 CONFIG_DEFAULT_ppp-mod-pppoe=y
 CONFIG_DEFAULT_procd-ujail=y
-CONFIG_DEFAULT_qcom-msm8916-modem-openstick-jz02v10-firmware=y
-CONFIG_DEFAULT_qcom-msm8916-openstick-jz02v10-wcnss-firmware=y
-CONFIG_DEFAULT_qcom-msm8916-wcnss-openstick-jz02v10-nv=y
+CONFIG_DEFAULT_qcom-msm8916-modem-openstick-uz801-firmware=y
+CONFIG_DEFAULT_qcom-msm8916-openstick-uz801-wcnss-firmware=y
+CONFIG_DEFAULT_qcom-msm8916-wcnss-openstick-uz801-nv=y
 CONFIG_DEFAULT_rmtfs=y
 CONFIG_DEFAULT_uci=y
 CONFIG_DEFAULT_uclient-fetch=y
@@ -2091,7 +2091,7 @@ CONFIG_PACKAGE_libiwinfo-data=y
 # CONFIG_PACKAGE_qcom-apq8016-modem-firmware is not set
 # CONFIG_PACKAGE_qcom-apq8016-wcnss-firmware is not set
 # CONFIG_PACKAGE_qcom-apq8016-wcnss-nv is not set
-CONFIG_PACKAGE_qcom-msm8916-modem-openstick-jz02v10-firmware=y
+# CONFIG_PACKAGE_qcom-msm8916-modem-openstick-jz02v10-firmware is not set
 # CONFIG_PACKAGE_qcom-msm8916-modem-openstick-mf32-firmware is not set
 # CONFIG_PACKAGE_qcom-msm8916-modem-openstick-mf601-firmware is not set
 # CONFIG_PACKAGE_qcom-msm8916-modem-openstick-qrzl903-firmware is not set
@@ -2100,12 +2100,12 @@ CONFIG_PACKAGE_qcom-msm8916-modem-openstick-jz02v10-firmware=y
 # CONFIG_PACKAGE_qcom-msm8916-modem-openstick-ufi001c-firmware is not set
 # CONFIG_PACKAGE_qcom-msm8916-modem-openstick-ufi003-firmware is not set
 # CONFIG_PACKAGE_qcom-msm8916-modem-openstick-ufi103s-firmware is not set
-# CONFIG_PACKAGE_qcom-msm8916-modem-openstick-uz801-firmware is not set
+CONFIG_PACKAGE_qcom-msm8916-modem-openstick-uz801-firmware=y
 # CONFIG_PACKAGE_qcom-msm8916-modem-openstick-w001-firmware is not set
 # CONFIG_PACKAGE_qcom-msm8916-modem-openstick-wf2-firmware is not set
 # CONFIG_PACKAGE_qcom-msm8916-modem-wt86047-firmware is not set
 # CONFIG_PACKAGE_qcom-msm8916-modem-wt88047-firmware is not set
-CONFIG_PACKAGE_qcom-msm8916-openstick-jz02v10-wcnss-firmware=y
+# CONFIG_PACKAGE_qcom-msm8916-openstick-jz02v10-wcnss-firmware is not set
 # CONFIG_PACKAGE_qcom-msm8916-openstick-mf32-wcnss-firmware is not set
 # CONFIG_PACKAGE_qcom-msm8916-openstick-mf601-wcnss-firmware is not set
 # CONFIG_PACKAGE_qcom-msm8916-openstick-qrzl903-wcnss-firmware is not set
@@ -2114,10 +2114,10 @@ CONFIG_PACKAGE_qcom-msm8916-openstick-jz02v10-wcnss-firmware=y
 # CONFIG_PACKAGE_qcom-msm8916-openstick-ufi001c-wcnss-firmware is not set
 # CONFIG_PACKAGE_qcom-msm8916-openstick-ufi003-wcnss-firmware is not set
 # CONFIG_PACKAGE_qcom-msm8916-openstick-ufi103s-wcnss-firmware is not set
-# CONFIG_PACKAGE_qcom-msm8916-openstick-uz801-wcnss-firmware is not set
+CONFIG_PACKAGE_qcom-msm8916-openstick-uz801-wcnss-firmware=y
 # CONFIG_PACKAGE_qcom-msm8916-openstick-w001-wcnss-firmware is not set
 # CONFIG_PACKAGE_qcom-msm8916-openstick-wf2-wcnss-firmware is not set
-CONFIG_PACKAGE_qcom-msm8916-wcnss-openstick-jz02v10-nv=y
+# CONFIG_PACKAGE_qcom-msm8916-wcnss-openstick-jz02v10-nv is not set
 # CONFIG_PACKAGE_qcom-msm8916-wcnss-openstick-mf32-nv is not set
 # CONFIG_PACKAGE_qcom-msm8916-wcnss-openstick-mf601-nv is not set
 # CONFIG_PACKAGE_qcom-msm8916-wcnss-openstick-qrzl903-nv is not set
@@ -2126,7 +2126,7 @@ CONFIG_PACKAGE_qcom-msm8916-wcnss-openstick-jz02v10-nv=y
 # CONFIG_PACKAGE_qcom-msm8916-wcnss-openstick-ufi001c-nv is not set
 # CONFIG_PACKAGE_qcom-msm8916-wcnss-openstick-ufi003-nv is not set
 # CONFIG_PACKAGE_qcom-msm8916-wcnss-openstick-ufi103s-nv is not set
-# CONFIG_PACKAGE_qcom-msm8916-wcnss-openstick-uz801-nv is not set
+CONFIG_PACKAGE_qcom-msm8916-wcnss-openstick-uz801-nv=y
 # CONFIG_PACKAGE_qcom-msm8916-wcnss-openstick-w001-nv is not set
 # CONFIG_PACKAGE_qcom-msm8916-wcnss-openstick-wf2-nv is not set
 # CONFIG_PACKAGE_qcom-msm8916-wcnss-wt88047-nv is not set

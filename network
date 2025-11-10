@@ -1,0 +1,48 @@
+
+config interface 'loopback'
+	option device 'lo'
+	option proto 'static'
+	list ipaddr '127.0.0.1/8'
+
+config device
+	option name 'br-lan'
+	option type 'bridge'
+	list ports 'eth0'
+	list ports 'usb0'
+
+config interface 'lan'
+	option device 'br-lan'
+	option proto 'static'
+	list ipaddr '192.168.1.1/24'
+	option ip6assign '60'
+
+config interface 'modem'
+	option proto 'modemmanager'
+	option device 'qcom-soc'
+	option apn 'ctnet'
+	option pincode '1234'
+	option iptype 'ipv4v6'
+	option force_link '1'
+	option loglevel 'ERR'
+	option allowedmode '4g|3g|2g'
+	option preferredmode '4g'
+	list allowedauth 'pap'
+	option auth 'none'
+
+config interface 'usb1'
+	option proto 'dhcp'
+	option device 'usb1'
+	option ip6assign '64'
+	list ip6class 'local'
+	option type 'bridge'
+
+config interface 'usb_1'
+	option proto 'dhcpv6'
+	option device 'usb1'
+	option reqaddress 'try'
+	option reqprefix 'auto'
+	option norelease '1'
+	option ip6assign '64'
+	list ip6class 'local'
+	option type 'bridge'
+
