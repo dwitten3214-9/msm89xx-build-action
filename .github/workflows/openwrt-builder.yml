@@ -72,7 +72,7 @@ jobs:
         if [ ${{ inputs.source }} == 'openwrt' ]; then
           REPO_URL='https://github.com/lkiuyu/openwrt-ufi'
         elif [ ${{ inputs.source }} == 'immortalwrt' ]; then
-          REPO_URL='https://github.com/dwitten3214-9/immortalwrt'
+          REPO_URL='https://github.com/AmeEcho/immortalwrt'
         fi
         git clone --depth=1 $REPO_URL openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
